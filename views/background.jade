@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/background.css')
+  body 
+    div.container(style="background-color: #{color}")
+      h1(style="color: #{textColor}") #{valueObj.name}
+      h3(style="color: #{textColor}") rgb(#{valueObj.r}, #{valueObj.g}, #{valueObj.b})
+      h3(style="color: #{textColor}") hsl(#{valueObj.h}, #{valueObj.s}, #{valueObj.l})
+      h3(style="color: #{textColor}") hexcode 
+      h3(style="color: #{textColor}") ##{valueObj.hex}
+    block content

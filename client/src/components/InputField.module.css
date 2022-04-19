@@ -1,0 +1,80 @@
+.inputField {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.inputField label,
+.inputField span {
+  text-align: left;
+  font-size: medium;
+  letter-spacing: 1.2px;
+}
+
+.inputField span {
+  font-size: small;
+  color: rgb(255, 103, 103);
+}
+
+.inputField input {
+  padding: 0.5rem 0 0.5rem 0;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: medium;
+  letter-spacing: 1.4px;
+}
+
+.inputField input:active,
+.inputField input:focus {
+  outline: none !important;
+  border-bottom: 3px solid var(--primary);
+}
+
+.actions input {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: medium;
+  letter-spacing: 1.4px;
+  margin-top: 0.5rem;
+  background-color: var(--accent);
+  border: 3px solid var(--primary);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.actions input:hover {
+  background-color: var(--primary);
+  transform: scale(1.03);
+}
+.actions input:active {
+  background-color: var(--primary);
+  transform: scale(1);
+}
+
+@media screen and (max-width: 900px) {
+  .inputField {
+    gap: 0.35rem;
+    margin-bottom: 1rem;
+  }
+  .inputField input {
+    padding: 0.35rem 0 0.35rem 0;
+  }
+  .actions input {
+    padding: 0.35rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .inputField {
+    gap: 0.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .inputField input {
+    padding: 0.2rem 0 0.2rem 0;
+  }
+  .actions input {
+    padding: 0.2rem;
+  }
+}

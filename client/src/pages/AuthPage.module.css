@@ -1,0 +1,149 @@
+.formContainer {
+  width: 50%;
+  padding: 5rem;
+  margin: 0 auto;
+  background-color: var(--accent);
+  border-radius: 6px;
+}
+
+.formContainer img {
+  position: absolute;
+  top: 50;
+  transform: scale(1.4);
+}
+
+.form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.actions input {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: medium;
+  letter-spacing: 1.4px;
+  margin-top: 0.5rem;
+  background-color: var(--accent);
+  border: 3px solid var(--primary);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.actions input:hover {
+  background-color: var(--primary);
+  transform: scale(1.03);
+}
+.actions input:active {
+  background-color: var(--primary);
+  transform: scale(1);
+}
+
+.authenticatedContent {
+  width: 60%;
+  margin-left: auto;
+  padding: 0.7rem;
+  font-size: medium;
+  letter-spacing: 1.4px;
+  text-align: left;
+  border: 3px solid var(--primary);
+  border-radius: 6px;
+}
+
+.error {
+  text-align: center;
+  font-size: medium;
+  color: rgb(255, 103, 103);
+}
+
+@media screen and (max-width: 1200px) {
+  .formContainer img {
+    left: calc(100% - 82.5%);
+  }
+  .form {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .formContainer img {
+    top: 20%;
+  }
+  .authenticatedContent {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .formContainer {
+    width: 60%;
+    padding: 4rem;
+  }
+  .formContainer img {
+    left: calc(100% - 94%);
+  }
+  .form {
+    width: 80%;
+  }
+  .authenticatedContent {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .formContainer img {
+    left: calc(100% - 94%);
+    transform: scale(1.25);
+  }
+  .form {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .formContainer {
+    width: 70%;
+    padding: 3.5rem;
+  }
+  .formContainer img {
+    left: calc(100% - 99%);
+    transform: scale(1.15);
+  }
+  .form {
+    width: 85%;
+  }
+  .authenticatedContent {
+    font-size: 0.85rem;
+    padding: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .formContainer {
+    padding: 2rem;
+  }
+  .formContainer img {
+    left: 0;
+    width: 125px;
+    transform: scale(1);
+  }
+  .form {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .formContainer {
+    padding: 1rem;
+  }
+  .formContainer img {
+    left: 0;
+    width: 100px;
+  }
+  .form {
+    width: 95%;
+  }
+  .authenticatedContent {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+}

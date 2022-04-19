@@ -1,0 +1,79 @@
+.formContainer {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+
+.details,
+.commentConainer,
+.commentForm {
+  padding: 1rem;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 2;
+  letter-spacing: 1.3px;
+  background-color: var(--accent);
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.commentForm form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.commentConainer {
+  max-height: 400px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  .details,
+  .commentConainer,
+  .commentForm {
+    width: 70%;
+  }
+  .commentForm form {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .details,
+  .commentConainer,
+  .commentForm {
+    width: 80%;
+  }
+  .commentForm form {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .details,
+  .commentConainer,
+  .commentForm {
+    width: 90%;
+    font-size: 0.8rem;
+  }
+  .commentForm form {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .details,
+  .commentConainer,
+  .commentForm {
+    text-align: left;
+  }
+  .commentForm form {
+    width: 90%;
+  }
+}

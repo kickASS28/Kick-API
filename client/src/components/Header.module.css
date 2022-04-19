@@ -1,0 +1,150 @@
+.header {
+  padding: 0.8rem;
+  grid-row: 1;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  background-color: var(--primary);
+  border-radius: 6px;
+}
+
+.logo,
+.logo2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: var(--accent);
+  border-radius: 6px;
+  transition: all ease-in-out 0.3s;
+}
+
+.logo2 {
+  display: none;
+  visibility: hidden;
+  transform: scale(1.05);
+}
+
+.logo span {
+  font-weight: 500;
+}
+
+.logo:hover {
+  transform: scale(1.04);
+}
+
+.logo:active,
+.logo2:hover {
+  transform: scale(1);
+}
+
+.menuList {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.menuList li a {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  padding-right: 0.65rem;
+  padding-left: 0.65rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all ease-in-out 0.3s;
+}
+
+.active {
+  transform: scale(1.1);
+  background-color: var(--accent);
+}
+
+.menuList li a:hover {
+  background-color: var(--accent);
+  transform: scale(1.1);
+}
+
+.menuList li a:active {
+  background-color: #ffffff;
+  transform: scale(1);
+}
+
+.mobnav {
+  background-color: var(--primary);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  display: none;
+  visibility: hidden;
+}
+
+.mobnav .menuList {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  gap: 0.5rem;
+}
+
+.mobnav .menuList li {
+  width: 100%;
+}
+
+.mobnav .menuList li a {
+  margin: 0;
+  gap: 2rem;
+  justify-content: flex-start;
+  border: 1px solid var(--accent);
+}
+
+.mobnav .menuList li a:hover {
+  background-color: var(--accent);
+  transform: scale(1.05);
+}
+
+.mobnav .menuList li a:active {
+  background-color: var(--accent);
+  transform: scale(1);
+}
+
+.mobactive {
+  transform: scale(1.05);
+  background-color: var(--accent);
+}
+
+@media screen and (max-width: 720px) {
+  .header {
+    height: 35px;
+  }
+  .logo,
+  .logo2 {
+    padding: 0.4rem;
+  }
+  .nav {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .logo2 {
+    display: block;
+    visibility: visible;
+  }
+  .mobnav {
+    display: block;
+    visibility: visible;
+  }
+}

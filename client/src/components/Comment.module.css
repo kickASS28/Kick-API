@@ -1,0 +1,26 @@
+.commentContainer {
+  padding: 0.5rem;
+  background-color: var(--primary);
+  border-radius: 6px;
+}
+
+.comment {
+  text-align: justify;
+  margin: 0;
+}
+
+.commentDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date {
+  text-align: left;
+  font-size: small;
+}
+
+.username {
+  text-align: right;
+  font-size: small;
+}
