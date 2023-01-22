@@ -25,7 +25,7 @@ app.use("/comments", commentRouter);
 app.use("/auth", authRouter);
 
 app.get("*", (req, res) =>
-  res.sendFile(path.resolve("client", "build", "index.html"))
+  res.redirect("https://kick-api-docs.onrender.com/home")
 );
 
 app.listen(port, () => {
