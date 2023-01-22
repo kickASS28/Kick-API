@@ -24,9 +24,7 @@ app.use("/api", apiRouter);
 app.use("/comments", commentRouter);
 app.use("/auth", authRouter);
 
-app.get("*", (req, res) =>
-  res.redirect("https://kick-api-docs.onrender.com/home")
-);
+app.get("*", (req, res) => res.redirect("https://kick-api-docs.onrender.com/"));
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
